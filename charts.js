@@ -104,11 +104,12 @@ function buildCharts(sample) {
     y: sampleValues,
     text: otuLabels,
     mode: "markers",
-    marker:
-    size: sampleValues,
-    color: otuIds,
+    marker: {
+      size: sampleValues,
+      color: otuIds,
     colorscale: "Earth"
     }
+  };
   // Deliverable 2: 2. Create the layout for the bubble chart.
   var bubbleLayout = {
     title: "Bacteria Cultures Per Sample",
